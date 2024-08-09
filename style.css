@@ -1,0 +1,62 @@
+/* Fonts */
+@font-face {
+    font-family: 'Alata';
+    src: url('/assets/fonts/Alata/Alata-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('/assets/fonts/Alata/Alata-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+
+/* Site Master Settings */
+body {
+    background-image: url(/assets/bgelements/flowers.png), url(/assets/bgelements/flowers.png),  url(/assets/bgelements/grass.png);
+    background-repeat: repeat-y, repeat-x, repeat;
+    font-family: 'Alata', sans-serif;
+}
+/* Card rectangle */
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: fixed;
+    inset: 0px;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    background-color: rgb(40, 192, 129);
+}
+
+#avatar {
+    max-width: 20%;
+    max-height: 20%;
+    display: flex;
+    margin: auto;
+    justify-content: left;
+}
+
+
+/* tabs bullshit! */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 0%;
+}
+
+.tab {
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+}
+
+.active-tab {
+    background-color: green;
+}
+
+.active-content{
+    display:flex;
+    flex-direction: row
+}
+
