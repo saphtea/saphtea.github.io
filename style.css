@@ -12,6 +12,11 @@ body {
     background-repeat: repeat-y, repeat-x, repeat;
     font-family: 'Alata', sans-serif;
 }
+
+h3 {
+    font-size:50px
+}
+
 /* Card rectangle */
 .card {
     display: flex;
@@ -29,10 +34,28 @@ body {
     max-width: 20%;
     max-height: 20%;
     display: flex;
-    margin: auto;
-    justify-content: left;
+    object-fit: cover
 }
 
+#tab1 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
+}
+
+#profileinfo {
+    line-height: 0.8;
+    font-size: 28px;
+    align-content: center;
+    
+}
+
+#pronounsmoment {
+    font-size: 22px;
+    line-height: 0.99;
+}
 
 /* tabs bullshit! */
 .tab-container {
