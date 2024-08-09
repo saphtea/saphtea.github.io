@@ -11,22 +11,27 @@ body {
     /*background stuff*/
     background-image: url(/assets/bgelements/flowers.gif), url(/assets/bgelements/flowers.gif),  url(/assets/bgelements/grass.png);
     background-repeat: repeat-y, repeat-x, repeat;
+    background-size: 70px, 70px;
 
     font-family: 'Alata', sans-serif;
+    --primary-color: rgb(135, 231, 255);
+    --subtext-color: rgb(159, 196, 207);
+    --accent-color: rgb(151, 135, 241);
+    --link-color: var(--primary-color);
+    --reading: rgb(255, 255, 255);
 }
 
 /* Card rectangle */
 .card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-
 
     position: fixed;
     inset: 10px;
-    height: 36vh;
-    width: 74vw;
+    height: 50vh;
+    width: 78vw;
     margin: auto;
 
 
@@ -34,74 +39,98 @@ body {
     border-radius: 10px;
 }
 
-#avatar {
-    width: 30%;
-    height: 30%;
-    display: flex;
-    object-fit: cover;
-    padding-bottom: 2%;
-    border-radius: 50%;
-}
-
 #tab1 {
+    --tab1-header-size: 28px;
+    --tab1-sub-header-size: 22px;
+
     display: flex;
     flex-wrap:nowrap;
     flex-direction: row;
     align-items: center;
     align-content: baseline;
-    width:680%;
+    flex-direction: row;
+
+    height: 100%;
+}
+
+#profilecol1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+#avatar {
+    width: 23%;
+    height: 35%;
+    display: flex;
+    object-fit: cover;
+    border-radius: 48%;
+    border: 2px solid var(--reading);
 }
 
 #profileinfo {
-    align-content: space-between;
-    text-align: start;
-    color:rgb(173, 217, 255);
-    line-height: 0.3;
-    font-size: 28px;
+    text-align: left;
+    line-height: 0.59;
+    letter-spacing: 0.1px;
+}
+
+#username {
+    text-decoration: underline var(--accent-color);
+    color: var(--reading);
+    font-size: var(--tab1-header-size);
+    padding-top: 5px;
 }
 
 #pronounsmoment {
-    font-size: 22px;
-    line-height: 0.9;
-    color:rgb(255, 255, 255);
+    font-size: 17px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+    color:var(--primary-color);
 }
 
-#profilemiddle {
+#profilecol2 {
+    width: 50%;
+}
+
+#title {
+    font-size: 30px;
+    color: var(--reading);
+    text-decoration: underline var(--accent-color);
+    line-height: var(--tab1-header-size);
 }
 
 #links {
-    font-weight: 800;
-    font-size: 30px;
-    color:#49a787;
+    padding-bottom: auto;
     flex-shrink: 2;
+    font-weight: 800;
+    line-height: 18px;
+    font-size: var(--tab1-sub-header-size);
 }
 
 /* tabs bullshit! */
 .tab-container {
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
-    width: 12%;
-    padding: 20px;
+    justify-content: baseline;
+    width: 20%;
+    padding: 40px;
 }
 
 .tab-container button {
     font-family: Alata;
     font-weight: 500;
-    line-height: 104%;
-    align-items: center;
-    justify-content: center;
-    letter-spacing:1.2px;
-
+    line-height: 85%;
+    letter-spacing: 0.1px;
 
     background-color: #49a787; /* Green background */
     border: 1px solid rgb(3, 116, 87); /* Green border */
     color: white; /* White text */
-    padding: 6px 7px; /* Some padding */
+    padding: 19px 7px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     width: 110%; /* Set a width if needed */
     display: flex; /* Make the buttons appear below each other */
-    height:12%
+    flex-shrink: inherit;
 }
 
 .tab {
@@ -118,32 +147,28 @@ body {
 
 .active-content{
     display:flex;
-    flex-direction: row;
-    padding: 10%;
-
-    flex-grow: 4;
 }
 
 a:link {
-    color: rgb(173, 217, 255);
+    color: var(--link-color);
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: rgb(173, 217, 255);
+    color: var(--link-color);
     background-color: transparent;
     text-decoration: none;
   }
   
   a:hover {
-    color: rgb(173, 217, 255);
+    color: var(--link-color);
     background-color: transparent;
     text-decoration: underline;
   }
   
   a:active {
-    color: rgb(173, 217, 255);
+    color: var(--link-color);
     background-color: transparent;
     text-decoration: underline;
   }
