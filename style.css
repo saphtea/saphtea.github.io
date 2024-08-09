@@ -8,13 +8,11 @@
 
 /* Site Master Settings */
 body {
+    /*background stuff*/
     background-image: url(/assets/bgelements/flowers.gif), url(/assets/bgelements/flowers.gif),  url(/assets/bgelements/grass.png);
     background-repeat: repeat-y, repeat-x, repeat;
-    font-family: 'Alata', sans-serif;
-}
 
-h3 {
-    font-size:50px
+    font-family: 'Alata', sans-serif;
 }
 
 /* Card rectangle */
@@ -27,14 +25,16 @@ h3 {
     height: 50vh;
     width: 50vw;
     margin: auto;
-    background-color: rgb(40, 192, 129);
+    background-color: rgb(19, 51, 40);
 }
 
 #avatar {
     max-width: 20%;
     max-height: 20%;
     display: flex;
-    object-fit: cover
+    object-fit: cover;
+    padding-bottom: 2%;
+    border-radius: 100%;
 }
 
 #tab1 {
@@ -46,23 +46,39 @@ h3 {
 }
 
 #profileinfo {
-    line-height: 0.8;
+    text-align: left;
+    color:rgb(173, 217, 255);
+    line-height: 0.3;
     font-size: 28px;
     align-content: center;
-    
 }
 
 #pronounsmoment {
     font-size: 22px;
-    line-height: 0.99;
+    line-height: 0.9;
+    color:rgb(255, 255, 255)
 }
 
 /* tabs bullshit! */
 .tab-container {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin-top: 0%;
+    justify-content: center;
+}
+
+.tab-container button {
+    font-family: Alata;
+    font-weight: 500;
+    line-height: 104%;
+
+
+    background-color: #57b394; /* Green background */
+    border: 1px solid rgb(34, 95, 61); /* Green border */
+    color: white; /* White text */
+    padding: 6px 7px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 75%; /* Set a width if needed */
+    display: flex; /* Make the buttons appear below each other */
 }
 
 .tab {
