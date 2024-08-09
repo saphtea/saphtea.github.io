@@ -12,7 +12,6 @@ function openTab(evt, tabId) {
     }
 
     // Show the selected tab content and mark it as active
-    document.getElementById(tabId).classList.remove("inactive-content")
-    document.getElementById(tabId).classList.add("active-content")
+    document.getElementById(tabId).classList.add('active-content')
     evt.currentTarget.classList.add('active-tab')
 }
