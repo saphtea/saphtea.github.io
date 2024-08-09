@@ -49,6 +49,7 @@ body {
     align-items: center;
     align-content: baseline;
     flex-direction: row;
+    padding: 20px;
 
     height: 100%;
 }
@@ -114,7 +115,7 @@ body {
     flex-direction: column;
     justify-content: baseline;
     width: 20%;
-    padding: 40px;
+    padding-left: 0px;
 }
 
 .tab-container button {
@@ -126,11 +127,10 @@ body {
     background-color: #49a787; /* Green background */
     border: 1px solid rgb(3, 116, 87); /* Green border */
     color: white; /* White text */
-    padding: 19px 7px; /* Some padding */
+    padding: 38px 15px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 110%; /* Set a width if needed */
+    width: 100%; /* Set a width if needed */
     display: flex; /* Make the buttons appear below each other */
-    flex-shrink: inherit;
 }
 
 .tab {
