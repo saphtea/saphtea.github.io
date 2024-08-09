@@ -8,7 +8,7 @@
 
 /* Site Master Settings */
 body {
-    background-image: url(/assets/bgelements/flowers.png), url(/assets/bgelements/flowers.png),  url(/assets/bgelements/grass.png);
+    background-image: url(/assets/bgelements/flowers.gif), url(/assets/bgelements/flowers.gif),  url(/assets/bgelements/grass.png);
     background-repeat: repeat-y, repeat-x, repeat;
     font-family: 'Alata', sans-serif;
 }
