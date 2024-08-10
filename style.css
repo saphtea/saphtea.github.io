@@ -204,6 +204,10 @@ body {
     display: flex; /* Make the buttons appear below each other */
 }
 
+.tab.active-tab {
+    background-color: var(--accent-color);
+}
+
 .tab {
     cursor: pointer;
     overflow: hidden;
@@ -211,10 +215,6 @@ body {
 
 .tab-container button:hover {
     background-color: var(--accent-color);
-}
-
-.active-tab {
-    background-color: green;
 }
 
 .tab-content {
