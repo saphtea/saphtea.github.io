@@ -31,7 +31,7 @@
 /* Site Master Settings */
 body {
     /*background stuff*/
-    background-image: url(/assets/bgelements/flowers.gif), url(/assets/bgelements/flowers.gif),  url(/assets/bgelements/grass.png);
+    background-image: url(/assets/bgelements/flowers.gif), url(/assets/bgelements/flowers.gif),  url(https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/bgelements/grass.png);
     background-repeat: repeat-y, repeat-x, repeat;
     background-size: 70px, 70px;
 
