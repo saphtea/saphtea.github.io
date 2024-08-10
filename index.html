@@ -12,6 +12,10 @@
         <meta http-equiv="Expires" content="0"/>        
     </head>
 
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
 
 <!-- Resources -->
 
@@ -27,13 +31,13 @@
         <div class="tab-container">
             <button class="tab" onclick="openTab(event, 'tab1')">Profile</button>
             <button class="tab" onclick="openTab(event, 'tab2')">Previous Work</button>
-            <button class="tab" onclick="openTab(event, 'tab3')">Art</button>
+            <button class="tab" onclick="openTab(event, 'tab3')">Personal Works</button>
         </div>
         
         <!-- Main Tab -->
         <div class="tab-content" id="tab1">
             <div id="profilecol1">
-                <div id="profileinfo">
+                <div id="profileinfo active-content">
                     <img id="avatar" src="assets/avatars/avatar.png" alt="saph." width="40%" height="40%">
                     <div id="username">saph.</div>
                     <br />
@@ -59,11 +63,34 @@
         
         
         <div class="tab-content" id="tab2">
-            hai
+            <article class="grid-gallery">
+                <img src="/assets/portfolio/589fb998-8071-4116-9ad5-702b60720581_rw_1920.png" alt="description of picture 1" class="thumbnail"/>
+                <div class="video-background thumbnail">
+                    <iframe src="https://www.youtube.com/embed/t8JRQsts1zc?controls=1&showinfo=0&rel=0&autoplay=0&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <img src="/assets/portfolio/43edac95-fa25-411c-95d8-c0b3ef77946a.png" alt="description of picture 8" class="thumbnail"/>
+                <img src="/assets/portfolio/s1-_2.png" alt="description of picture 8" class="thumbnail"/>
+                <img src="/assets/portfolio/image-30.png" alt="description of picture 5" class="thumbnail"/>
+                <img src="/assets/portfolio/layout_12-1.png" alt="description of picture 6" class="thumbnail"/>
+                <img src="/assets/portfolio/layout_14-1.png" alt="description of picture 7" class="thumbnail"/>
+                <img src="/assets/portfolio/o1-l2.png" alt="description of picture 8" class="thumbnail"/>
+                
+              </article>              
         </div>
         
-        <div class="tab-content" id="tab3">
-            hayio
+        <div class="tab-content active-content" id="tab3">
+            <article class="grid-gallery">
+                <img src="/assets/highres/0012.png" alt="description of picture 8" class="thumbnail"/>
+                <video controls poster="/assets/highres/patchworx test thumbnail.PNG" class="thumbnail">
+                    <source src="/assets/highres/patchworx test0001-10741.mp4" type="video/mp4">
+                </video>
+                <img src="/assets/highres/bigboy.png" alt="description of picture 8" class="thumbnail"/>
+                <img src="/assets/highres/shell corpus essentials mix.png" alt="description of picture 6" class="thumbnail"/>
+                <img src="/assets/highres/bunker final render.png" alt="description of picture 5" class="thumbnail"/>
+                <img src="/assets/highres/sddfsdfg.png" alt="description of picture 7" class="thumbnail"/>
+                <img src="/assets/highres/untitled.png" alt="description of picture 8" class="thumbnail"/>
+                <img src="/assets/highres/9b975559-30c6-46a9-9de1-f694127b38dc_rw_1920.png" alt="description of picture 8" class="thumbnail"/>
+            </article>     
         </div>    
     </div>
 </body>
