@@ -1,2 +1,3 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
 /assets/highres/patchworx[[:space:]]test0001-10741.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
