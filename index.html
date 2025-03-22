@@ -28,35 +28,45 @@
 
     <!-- Centered card-->
     <div class="card">
-        <div class="tab-container">
-            <button class="tab active-tab" onclick="openTab(event, 'tab1')">profile</button>
-            <button class="tab" onclick="openTab(event, 'tab2')">previous work</button>
-            <button class="tab" onclick="openTab(event, 'tab3')">personal works</button>
-        </div>
+
         
         <!-- Main Tab -->
         <div class="tab-content active-content" id="tab1">
-            <div id="profilecol1">
+            <div id="profile">
                 <div id="profileinfo">
-                    <img id="avatar" src="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/avatars/avatar.png" alt="saph." width="40%" height="40%">
-                    <div id="username">saph.</div>
-                    <br />
-                    <div id="pronounsmoment">she/her</div>
-                    <div id="pronounsmoment">they/them</div>
+                    <img id="avatar" src="https://github.com/saphtea/saphtea.github.io/blob/main/assets/avatars/avatar.jpg?raw=true" alt="saph." width="40%" height="40%">
+                    <div id="title">saph.</div>
+                    <div id="subtitle">she/her</div>
                 </div>
-             </div>
+                </br>
+                <div id="profilelinks">
+                    <div id="title">visual artist.</div>
+                    <a id="subtitle" href="https://www.instagram.com/saphvis/">insta</a>
+                    <br />
+                    <a id="subtitle" href="https://saphvis.tumblr.com/">tumblr</a>
+                    <br />
+                    <a id="subtitle" href="https://soundcloud.com/saphperiod">soundcloud</a>
+                    <br />
+                    <a id="subtitle" href="https://saphtea.newgrounds.com/">ng</a>
+                </div>
+            </div>
+
+            <hr id="divider"> 
 
             <div id="profilecol2">
-                <div id="links">
-                    <div id="title">visual artist.</div>
-                    </br >
-                    <a href="https://www.instagram.com/saphvis/">insta</a>
-                    <br />
-                    <a href="https://saphvis.tumblr.com/">tumblr</a>
-                    <br />
-                    <a href="https://soundcloud.com/saphperiod">soundcloud</a>
-                    <br />
-                    <a href="https://saphtea.newgrounds.com/">ng</a>
+                <div id="title">
+                    Recent Work
+                </div>
+            </br>
+                <img src="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/refs/heads/main/assets/portfolio/2025%2002%2027%20-%20shorples%20yellow%20jacket%20-%20pure%20oled%20cc_.png" alt="description of picture 8"/>
+                <br />
+                <div id="title">
+                    Brand:
+                </br>
+                </div>
+
+                <div id="subtitle">
+                    saph. 
                 </div>
             </div>
         </div>
@@ -78,7 +88,7 @@
               </article>              
         </div>
         
-        <div class="tab-content" id="tab3">
+        <!-- <div class="tab-content" id="tab3">
             <article class="grid-gallery">
                 <img src="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/highres/0012.png" alt="description of picture 8" class="thumbnail"/>
                 <video controls poster="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/highres/patchworx test thumbnail.PNG" class="thumbnail">
@@ -91,7 +101,12 @@
                 <img src="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/highres/untitled.png" alt="description of picture 8" class="thumbnail"/>
                 <img src="https://media.githubusercontent.com/media/saphtea/saphtea.github.io/main/assets/highres/9b975559-30c6-46a9-9de1-f694127b38dc_rw_1920.png" alt="description of picture 8" class="thumbnail"/>
             </article>     
-        </div>    
+        </div>   -->
+        <div class="tab-container">
+            <button id="toptab" class="tab active-tab" onclick="openTab(event, 'tab1')">profile</button>
+            <button id="bottomtab" class="tab" onclick="openTab(event, 'tab2')">brand work</button>
+            <!-- <button id="bottomtab" class="tab" onclick="openTab(event, 'tab3')">personal works</button> -->
+        </div>  
     </div>
 </body>
 

@@ -1,0 +1,15 @@
+only most recent image on profile
+
+center align text
+
+
+gallery
+
+4 columns x 2 rows for desktop
+2 columns x 3 rows for mobile
+
+work gallery:
+
+    Brands Featured at bottom of gallery
+
+    Click into image, specific info on brand and mediums
