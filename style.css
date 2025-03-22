@@ -155,7 +155,7 @@ body {
 #subtitle {
     color:var(--primary-color);
     font-weight: 800;
-    line-height: %;
+    line-height: 35%;
     font-size: var(--tab1-sub-header-size);
     white-space: nowrap;
 
@@ -323,7 +323,9 @@ a:link {
     
     #tab1 {
         flex-direction: column;
-        gap: 5%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0px;
     }
 
     #profile {
@@ -331,7 +333,8 @@ a:link {
         flex-direction: row;
         max-height: 100%;
         max-width: 100%;
-        gap: 10%;
+        margin-top: 0px;
+
         
         justify-content:center;
     }
@@ -364,10 +367,44 @@ a:link {
     }
 
     #title {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     #subtitle {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 20px;
     }
-  }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 98vw;
+        height: 98vh;
+        
+        
+    }
+
+    .tab-container {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 100%;
+        width: auto;
+        padding-right: auto;
+    }
+    .tab-container button {
+        height: auto;
+        width: auto;
+    }
+
+
+    #toptab {
+        border-radius: 10px 0px 0px 0px;
+    }
+    
+    #bottomtab {
+        border-radius: 0px 10px 0px 0px;
+    }
+}
